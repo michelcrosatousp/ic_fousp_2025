@@ -18,7 +18,7 @@ ic_previa = st.radio("Iniciação Científica Prévia", options=[0.0, 0.5], hori
 apresentacoes = st.radio("Apresentações/Publicações", options=[0.0, 0.5], horizontal=True)
 
 total1 = round(media + ic_previa + apresentacoes, 2)
-st.success(f"Total 1: {total1:.2f} pontos (inserir no ATENA essa pontuação no campo: Nota do Aluno")
+st.success(f"Total 1: {total1:.2f} pontos inserir no ATENA essa pontuação no campo: Nota do Aluno")
 
 st.markdown("---")
 st.header("2. Avaliação do Projeto")
@@ -33,7 +33,7 @@ q4 = criterio("IV. Formatação e cronograma compatíveis?")
 q5 = criterio("V. Projeto compatível com IC e define função do bolsista?")
 
 total2 = q1 + q2 + q3 + q4 + q5
-st.success(f"Total 2: {total2} pontos (inserir no ATENA essa pontuação no campo: Nota Projeto")
+st.success(f"Total 2: {total2} pontos inserir no ATENA essa pontuação no campo: Nota Projeto")
 
 st.markdown("---")
 st.header("🔍 Resultado Final")
