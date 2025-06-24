@@ -8,6 +8,8 @@ st.title("📝 Avaliação de Projetos de IC 2025/2026")
 
 st.header("1. Desempenho Acadêmico do Estudante")
 
+st.header("Michel-Crosato E; Braga MM")
+
 nome = st.text_input("Nome do Aluno")
 orientador = st.text_input("Orientador")
 
