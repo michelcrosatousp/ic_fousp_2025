@@ -39,7 +39,7 @@ st.header("🔍 Resultado Final")
 nota_final = round(total1 + total2, 2)
 st.metric("Nota Final", f"{nota_final:.2f} / 20")
 
-status = "✅ CLASSIFICADO" if nota_final >= 5.0 else "🚫 NÃO CLASSIFICADO"
+status = "✅ habilitado" if nota_final >= 5.0 else "🚫 NÃO CLASSIFICADO"
 st.subheader(status)
 
 # Montar dataframe para exportação
