@@ -20,7 +20,7 @@ apresentacoes = st.radio("Apresentações/Publicações", options=[0.0, 0.5], ho
 total1 = round(media + ic_previa + apresentacoes, 2)
 st.success(f"Total 1: {total1:.2f} pontos")
 
-Nota = st.text_input("inserir essa pontuação no campo: Nota Aluno")
+st.header("inserir essa pontuação no campo: Nota Aluno")
 
 st.markdown("---")
 st.header("2. Avaliação do Projeto")
@@ -37,7 +37,7 @@ q5 = criterio("V. Projeto compatível com IC e define função do bolsista?")
 total2 = q1 + q2 + q3 + q4 + q5
 st.success(f"Total 2: {total2} pontos")
 
-Projeto = st.text_input("inserir essa pontuação no campo: Nota Projeto")
+st.header("inserir essa pontuação no campo: Nota Projeto")
 
 st.markdown("---")
 st.header("🔍 Resultado Final")
