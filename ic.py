@@ -59,6 +59,7 @@ dados = {
 }
 df_resultado = pd.DataFrame(dados)
 
-
+# Exportar para Excel 
+st.download_button("⬇️ Baixar Excel", df_resultado.to_excel(index=False, engine='openpyxl'), file_name="avaliacao_ic.xlsx")
 
 
