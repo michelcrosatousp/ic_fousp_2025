@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import io
-import openpyxl
 
 st.set_page_config(page_title="Avaliação de Projetos IC", layout="centered")
 
@@ -60,17 +59,5 @@ dados = {
 }
 df_resultado = pd.DataFrame(dados)
 
-# Exportar para Excel 
-excel_buffer = io.BytesIO()
-with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
-    df_resultado.to_excel(writer, index=False)
-excel_buffer.seek(0)
-
-st.download_button(
-    label="⬇️ Baixar Excel",
-    data=excel_buffer,
-    file_name="avaliacao_ic.xlsx",
-    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-)
 
 
